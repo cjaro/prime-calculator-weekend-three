@@ -1,0 +1,26 @@
+{
+  "name": "weekend-three-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "bootstrap": "^4.0.0-alpha.6",
+    "express": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjaro/prime-calculator-weekend-three.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjaro/prime-calculator-weekend-three/issues"
+  },
+  "homepage": "https://github.com/cjaro/prime-calculator-weekend-three#readme"
+}
