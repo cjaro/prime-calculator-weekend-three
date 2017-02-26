@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <script src="client.js" charset="utf-8"></script>
-    <script src="jquery.js" charset="utf-8"></script>
-    <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
+<head>
+  <meta charset="utf-8">
+  <script src="/vendors/jquery.js" charset="utf-8"></script>
+  <script src="/scripts/client.js" charset="utf-8"></script>
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
 
-    <title>Calculator</title>
-  </head>
-  <body>
+  <title>Calculator</title>
 
-    <form>
-    </form>
+</head>
 
-    <div id="numberContainer">
+<body>
 
-      <div id="addition"></div>
-      <div id="subtraction"></div>
-      <div id="multiplication"></div>
-      <div id="division"></div>
-      
-    </div>
+  <h1>mi calculadora en el servidor!</h1>
+
+  <form id="numberInput"></form>
+  <span>primer valor: </span><input type="number" name="firstNumber">
+  <span>segundo valor: </span><input type="number" name="secondNumber">
+  <!-- <form id="secondNumberInput"></form> -->
+  <div id="operations"></div>
+  <button class="operation" data-operation="addition">adición!</button>
+  <button class="operation" data-operation="subtraction">sustracción!</button>
+  <button class="operation" data-operation="multiplication">multiplicación!</button>
+  <button class="operation" data-operation="division">división!</button>
+
+</div>
 
 
+<div id="answer">tu respuesta es: <span></span></div>
 
+<button id="clear">borrar números</button>
 
+</body>
 
-  </body>
 </html>
-
-
-<!-- do I need to add app.js in the head? check lecture notes -->
