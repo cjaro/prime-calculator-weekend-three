@@ -10,7 +10,6 @@ $(document).ready(function(){
     values.type = 'addition';
     if(values.type == 'addition'){
       additionTest();
-      // console.log(additionTest);
     }
   });
 
@@ -20,7 +19,6 @@ $(document).ready(function(){
     values.type = 'subtraction';
     if(values.type == 'subtraction'){
       subtractionTest();
-      // console.log(subtractionTest);
     }
   });
 
@@ -30,7 +28,6 @@ $(document).ready(function(){
     values.type = 'multiplication';
     if(values.type == 'multiplication'){
       multiplicationTest();
-      // console.log(multiplicationTest);
     }
   });
 
@@ -40,7 +37,6 @@ $(document).ready(function(){
     values.type = 'division';
     if(values.type == 'division'){
       divisionTest();
-      // console.log(divisionTest);
     }
   });
 
@@ -52,11 +48,9 @@ $(document).ready(function(){
       success: function(response){
         answerOnDom(response);
       }
-    }); //ends ajax
+    }); 
   }
 
-  // values.type = 'subtraction';
-  // subtractionTest();
   function subtractionTest(){
     $.ajax({
       url: '/subtraction',
@@ -65,11 +59,9 @@ $(document).ready(function(){
       success: function(response){
         answerOnDom(response);
       }
-    }); //ends ajax
+    });
   }
 
-  // values.type == 'multiplication';
-  // multiplicationTest();
   function multiplicationTest(){
     $.ajax({
       url: '/multiplication',
@@ -78,11 +70,9 @@ $(document).ready(function(){
       success: function(response){
         answerOnDom(response);
       }
-    }); //ends ajax
+    });
   }
 
-  // values.type == 'division';
-  // divisionTest();
   function divisionTest(){
     $.ajax({
       url: '/division',
@@ -91,9 +81,8 @@ $(document).ready(function(){
       success: function(response){
         answerOnDom(response);
       }
-    }); //ends ajax
+    });
   }
-  // console.log('math is working');
 
 });//ends doc ready
 
@@ -103,16 +92,4 @@ function answerOnDom(answer){
 
 $('#clear').on('click', function(){
   $('#showAnswer').text("");
-});
-// $('#numberContainer').on('click', function(){
-// var newOFishbject = {};
-// newFishObject.name = $('#newFishName').val();
-// $.ajax({
-//   type: 'POST',
-//   url: '/fish/new',
-//   data: newFishObject,
-//   success: function(response){
-// console.log(response);
-//     getFishData();
-//   }
-// }); //ends success response fxn
+}); //is not working
