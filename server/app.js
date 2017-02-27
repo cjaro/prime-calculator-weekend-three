@@ -2,40 +2,75 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 
-
+var values = {};
 
 var port = 5000;
 
-// var calculate = function(equation){
-//   var firstNumber = parseInt(equation.firstNumber);
-//   var secondNumber = parseInt(equation.secondNumber);
-//
-//           return addition(firstNumber,secondNumber);
-//       //subtration
-//           return subtraction(firstNumber,secondNumber);
-//       // multiplication
-//           return multiplication(firstNumber,secondNumber);
-//       // division
-//           return division(firstNumber,secondNumber);
-// }
-// };
-
 app.use(express.static('server/public')); //is this request for static files?
 app.use(bodyParser.urlencoded({extended: true})); //this creates req.body
-// app.use();
-
-
-// needs an on click for pressing the buttons to add stuff up
 
 app.post('/addition', function(req,res){
-    var answer = req.body;
-    res.send(answer);
+  var values = req.body;
+  console.log(values);
+  var addTotal = parseFloat(values.a) + parseFloat(values.b);
+    res.send(addTotal + '');
+    console.log(addTotal + '');
 });
 
+app.post('/subtraction', function(req,res){
+  var values = req.body;
+  console.log(values);
+  var subtractTotal = parseFloat(values.a) - parseFloat(values.b);
+    res.send(subtractTotal + '');
+    console.log(subtractTotal + '');
+});
+
+app.post('/multiplication', function(req,res){
+  var values = req.body;
+  console.log(values);
+  var multiplyTotal = parseFloat(values.a) * parseFloat(values.b);
+    res.send(multiplyTotal + '');
+    console.log(multiplyTotal + '');
+});
+
+app.post('/division', function(req,res){
+  var values = req.body;
+  console.log(values);
+  var divideTotal = parseFloat(values.a) / parseFloat(values.b);
+    res.send(divideTotal + '');
+    console.log(divideTotal + '');
+});
+
+// else {
+//
+// } else {
+//
+// } else {
+//
+// }
 
 
 
+// function subtraction(){
+//   var subtractTotal = math.a - math.b;
+//   return subtractTotal + '';
+// }
+// function multiplication(){
+//   return math.a * math.b;
+// }
+// function division(){
+//   return math.a / math.b;
+// }
 
 
 console.log('listening on port', port);
 app.listen(port);
+
+
+
+
+
+// var calculate = function(equation){
+//   var firstNumber = parseInt(equation.firstNumber);
+//   var secondNumber = parseInt(equation.secondNumber);
+// };
