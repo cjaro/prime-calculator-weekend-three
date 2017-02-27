@@ -1,0 +1,11 @@
+h1 {
+  background-color: aqua;
+  text-align: center;
+  font-style: oblique;
+}
+body {
+  background-color: bisque;
+  text-align: center;
+  background-image: url(https://lh4.ggpht.com/2HhylICy1uJPF5c1LzY2ZnZ3ymj8T11MURc4AkaZWP_WQ2zBcXy7UeTkebKD8DtKJGlX=w300);
+  background-repeat: repeat;
+}

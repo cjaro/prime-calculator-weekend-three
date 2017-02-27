@@ -8,16 +8,14 @@ $(document).ready(function(){
   $('.operation').on('click', function() {
     values.a = $('#firstNumber').val();
     values.b = $('#secondNumber').val();
-
-    if(values.type = 'addition'){
+    values.type = 'addition';
       additionTest();
-    } else if (values.type = 'subtraction'){
+    values.type = 'subtraction';
       subtractionTest();
-    } else if (values.type = 'multiplication'){
+      values.type = 'multiplication';
       multiplicationTest();
-    } else if (values.type = 'division'){
+    values.type = 'division';
       divisionTest();
-    }
 
     console.log("el clic funciona!");
 
@@ -49,7 +47,7 @@ $(document).ready(function(){
         type: 'POST',
         data: values,
         success: function(response){
-           answerOnDom(response);
+           result(response);
         }
      }); //ends ajax
     }
@@ -60,20 +58,20 @@ $(document).ready(function(){
         type: 'POST',
         data: values,
         success: function(response){
-           answerOnDom(response);
+           result();
         }
      }); //ends ajax
     }
 
   });
 
-  function answerOnDom(){
-      $('#answer').children('span').text();
-  }
+  // var result = function(){
+  //     $('#answer').append(response);
+  // };
 
-  $('#clear').on('click', function(){
-    $('#answer').children('span').text("");
-  });
+  // $('#clearAnswer').on('click', function(){
+  //   $('span').text("");
+  // });
   // $('#numberContainer').on('click', function(){
       // var newObject = {};
       // newObject.name = $('#newName').val();
