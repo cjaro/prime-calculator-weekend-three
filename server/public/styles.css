@@ -68,6 +68,10 @@ body {
   color: black;
 }
 
+#betweenAnswerAndButton {
+  padding: 10px;
+}
+
 span.firstNumberInput {
   background-color: black;
   color: white;
