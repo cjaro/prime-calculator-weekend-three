@@ -4,33 +4,37 @@
   <meta charset="utf-8">
   <script src="/vendors/jquery.js" charset="utf-8"></script>
   <script src="/scripts/client.js" charset="utf-8"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
-
-  <title>calculadora</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/vendors/favicon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>&Phi; calculadora &Phi;</title>
 
 </head>
 
 <body>
 
-  <h1>mi calculadora en el servidor!</h1>
+  <h1 class="col-md-12">&Phi; mi calculadora en el servidor! &Phi;</h1>
 
-  <form id="numberInput"></form>
-  <span class="firstNumberInput">primer valor: </span><input type="number" id="firstNumber">
-  <span class="secondNumberInput">segundo valor: </span><input type="number" id="secondNumber">
+  <div class="input col-md-12">
+    <form id="numberInput" class="col-sm-12"></form>
+    <span class="firstNumberInput col-sm-12">&Phi; primer valor &Phi;</span><input class="col-sm-12" type="number" id="firstNumber"><br>
+    <span class="secondNumberInput col-sm-12">&Phi; segundo valor &Phi;</span><input class="col-sm-12" type="number" id="secondNumber">
+  </div>
   <!-- <form id="secondNumberInput"></form> -->
-  <div class="operation"></div>
-  <button class="operation" id="addition">adición!</button>
-  <button class="operation" id="subtraction">sustracción!</button>
-  <button class="operation" id="multiplication">multiplicación!</button>
-  <button class="operation" id="division">división!</button>
+  <div class="operation col-md-12"></div>
+  <button class="operation col-md-3" id="addition"> &oplus; adición! &oplus; </button>
+  <button class="operation col-md-3" id="subtraction"> &#x2296; sustracción! &#x2296; </button>
+  <button class="operation col-md-3" id="multiplication"> &otimes; multiplicación! &otimes; </button>
+  <button class="operation col-md-3" id="division"> &#x2298; división! &#x2298; </button>
 
 </div>
 
 
-<h2>tu respuesta es: <span id='showAnswer'></span></h2>
+<h2 class="col-md-9">&Phi; tu respuesta es &Phi;<span id='showAnswer' class="col-md-3"></span></h2>
 
-<button id="clear">borrar números</button>
+<button id="clear"> &#x267B; borrar números &#x267B; </button>
 
 </body>
 

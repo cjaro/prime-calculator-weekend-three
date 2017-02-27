@@ -4,7 +4,9 @@ h1 {
   font-style: oblique;
   color: white;
   size: 32px;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
+  text-shadow: 3px 2px grey;
+  padding: 10px 0 10px 0;
 }
 
 h2 {
@@ -13,7 +15,9 @@ h2 {
   text-align: center;
   color: white;
   size: 32px;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
+  text-shadow: 3px 2px grey;
+  padding: 10px 0 10px 0;
 }
 
 body {
@@ -24,13 +28,44 @@ body {
   background-repeat: repeat;
 }
 
-button {
-  padding: 10px;
+#addition {
+  padding: 5px;
   margin: auto;
-  border-style: dashed 5px black;
-  color: white;
-  background-color: black;
+  background-color: orangered;
+  border-style: 3px solid black;
+  color: black;
+}
 
+#subtraction {
+  padding: 5px;
+  margin: auto;
+  background-color: yellow;
+  border-style: 3px solid black;
+  color: black;
+}
+
+#multiplication {
+  padding: 5px;
+  margin: auto;
+  background-color: limegreen;
+  border-style: 3px solid black;
+  color: black;
+}
+
+#division {
+  padding: 5px;
+  margin: auto;
+  background-color: dodgerblue;
+  border-style: 3px solid black;
+  color: black;
+}
+
+#clear {
+  padding: 5px;
+  margin: auto;
+  background-color: blueviolet;
+  border-style: 3px solid black;
+  color: black;
 }
 
 span.firstNumberInput {
@@ -50,5 +85,5 @@ span.secondNumberInput {
 }
 
 div.operation {
-  height: 25px;
+  height: 10px;
 }
