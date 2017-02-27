@@ -14,22 +14,19 @@ app.post('/addition', function(req,res){
   console.log(values);
   var addTotal = parseFloat(values.a) + parseFloat(values.b);
     res.send(addTotal + '');
-    console.log(addTotal + '');
 });
 
 app.post('/subtraction', function(req,res){
   var values = req.body;
   console.log(values);
-  var subtractTotal = parseFloat(values.a) - parseFloat(values.b);
+  var subtractTotal = values.a - values.b;
     res.send(subtractTotal + '');
-    console.log(subtractTotal + '');
-});
+  });
 
 app.post('/multiplication', function(req,res){
   var values = req.body;
   console.log(values);
-  var multiplyTotal = parseFloat(values.a) * parseFloat(values.b);
-    res.send(multiplyTotal + '');
+  var multiplyTotal = values.a * values.b;
     console.log(multiplyTotal + '');
 });
 
@@ -38,8 +35,7 @@ app.post('/division', function(req,res){
   console.log(values);
   var divideTotal = parseFloat(values.a) / parseFloat(values.b);
     res.send(divideTotal + '');
-    console.log(divideTotal + '');
-});
+  });
 
 // else {
 //

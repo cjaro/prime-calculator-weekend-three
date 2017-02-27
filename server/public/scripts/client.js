@@ -48,7 +48,7 @@ $(document).ready(function(){
       success: function(response){
         answerOnDom(response);
       }
-    }); 
+    });
   }
 
   function subtractionTest(){
@@ -84,12 +84,17 @@ $(document).ready(function(){
     });
   }
 
+  $('#clear').on('click', function(){
+    console.log('is working');
+    $('#firstNumber').val('');
+    $('#secondNumber').val('');
+
+  });
+
 });//ends doc ready
 
 function answerOnDom(answer){
   $('#showAnswer').text(answer);
 }
 
-$('#clear').on('click', function(){
-  $('#showAnswer').text("");
-}); //is not working
+ //is not working
