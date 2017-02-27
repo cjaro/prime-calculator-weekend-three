@@ -33,25 +33,3 @@ app.post('/division', function(req,res){
 
 console.log('listening on port', port);
 app.listen(port);
-
-// if(){
-// } else {
-// } else {
-// } else {
-// }
-
-// function subtraction(){
-//   var subtractTotal = math.a - math.b;
-//   return subtractTotal + '';
-// }
-// function multiplication(){
-//   return math.a * math.b;
-// }
-// function division(){
-//   return math.a / math.b;
-// }
-
-// var calculate = function(equation){
-//   var firstNumber = parseInt(equation.firstNumber);
-//   var secondNumber = parseInt(equation.secondNumber);
-// };

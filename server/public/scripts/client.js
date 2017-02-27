@@ -45,6 +45,7 @@ $(document).ready(function(){
   $('#clear').on('click', function(){
     $('#firstNumber').val('');
     $('#secondNumber').val('');
+    $('#showAnswer').text('');
   });
 
   function additionTest(){
