@@ -1,11 +1,54 @@
 h1 {
-  background-color: aqua;
+  background-color: black;
   text-align: center;
   font-style: oblique;
+  color: white;
+  size: 32px;
+  letter-spacing: 3px;
 }
+
+h2 {
+  background-color: black;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  size: 32px;
+  letter-spacing: 3px;
+}
+
 body {
   background-color: bisque;
   text-align: center;
   background-image: url(https://lh4.ggpht.com/2HhylICy1uJPF5c1LzY2ZnZ3ymj8T11MURc4AkaZWP_WQ2zBcXy7UeTkebKD8DtKJGlX=w300);
+  background-size: 100px 100px;
   background-repeat: repeat;
+}
+
+button {
+  padding: 10px;
+  margin: auto;
+  border-style: dashed 5px black;
+  color: white;
+  background-color: black;
+
+}
+
+span.firstNumberInput {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+span.secondNumberInput {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+div.operation {
+  height: 16px;
 }

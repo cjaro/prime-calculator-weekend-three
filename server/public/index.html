@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
 
-  <title>Calculator</title>
+  <title>calculadora</title>
 
 </head>
 
@@ -16,19 +16,19 @@
   <h1>mi calculadora en el servidor!</h1>
 
   <form id="numberInput"></form>
-  <span>primer valor: </span><input type="number" id="firstNumber">
-  <span>segundo valor: </span><input type="number" id="secondNumber">
+  <span class="firstNumberInput">primer valor: </span><input type="number" id="firstNumber">
+  <span class="secondNumberInput">segundo valor: </span><input type="number" id="secondNumber">
   <!-- <form id="secondNumberInput"></form> -->
-  <div id="operation"></div>
-  <button class="operation" data-operation="addition">adición!</button>
-  <button class="operation" data-operation="subtraction">sustracción!</button>
-  <button class="operation" data-operation="multiplication">multiplicación!</button>
-  <button class="operation" data-operation="division">división!</button>
+  <div class="operation"></div>
+  <button class="operation" id="addition">adición!</button>
+  <button class="operation" id="subtraction">sustracción!</button>
+  <button class="operation" id="multiplication">multiplicación!</button>
+  <button class="operation" id="division">división!</button>
 
 </div>
 
 
-<h2 id="answer">tu respuesta es: <span id='clearAnswer'></span></h2>
+<h2>tu respuesta es: <span id='showAnswer'></span></h2>
 
 <button id="clear">borrar números</button>
 
