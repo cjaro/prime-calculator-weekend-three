@@ -23,11 +23,13 @@ $(document).ready(function(){
   });
 
   $('#multiplication').on('click', function(){
+    console.log('button multiply clicked');
     values.a = $('#firstNumber').val();
     values.b = $('#secondNumber').val();
     values.type = 'multiplication';
     if(values.type == 'multiplication'){
       multiplicationTest();
+      console.log(multiplicationTest);
     }
   });
 
@@ -38,6 +40,11 @@ $(document).ready(function(){
     if(values.type == 'division'){
       divisionTest();
     }
+  });
+
+  $('#clear').on('click', function(){
+    $('#firstNumber').val('');
+    $('#secondNumber').val('');
   });
 
   function additionTest(){
@@ -84,17 +91,8 @@ $(document).ready(function(){
     });
   }
 
-  $('#clear').on('click', function(){
-    console.log('is working');
-    $('#firstNumber').val('');
-    $('#secondNumber').val('');
-
-  });
-
 });//ends doc ready
 
 function answerOnDom(answer){
   $('#showAnswer').text(answer);
 }
-
- //is not working

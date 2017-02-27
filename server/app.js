@@ -6,46 +6,41 @@ var values = {};
 
 var port = 5000;
 
-app.use(express.static('server/public')); //is this request for static files?
-app.use(bodyParser.urlencoded({extended: true})); //this creates req.body
+app.use(express.static('server/public'));
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.post('/addition', function(req,res){
-  var values = req.body;
-  console.log(values);
+  values = req.body;
   var addTotal = parseFloat(values.a) + parseFloat(values.b);
     res.send(addTotal + '');
 });
 
 app.post('/subtraction', function(req,res){
-  var values = req.body;
-  console.log(values);
+  values = req.body;
   var subtractTotal = values.a - values.b;
     res.send(subtractTotal + '');
   });
 
 app.post('/multiplication', function(req,res){
-  var values = req.body;
-  console.log(values);
+  values = req.body;
   var multiplyTotal = values.a * values.b;
-    console.log(multiplyTotal + '');
+    res.send(multiplyTotal + '');
 });
 
 app.post('/division', function(req,res){
-  var values = req.body;
-  console.log(values);
-  var divideTotal = parseFloat(values.a) / parseFloat(values.b);
+  values = req.body;
+  var divideTotal = values.a / values.b;
     res.send(divideTotal + '');
   });
 
-// else {
-//
+console.log('listening on port', port);
+app.listen(port);
+
+// if(){
 // } else {
-//
 // } else {
-//
+// } else {
 // }
-
-
 
 // function subtraction(){
 //   var subtractTotal = math.a - math.b;
@@ -57,14 +52,6 @@ app.post('/division', function(req,res){
 // function division(){
 //   return math.a / math.b;
 // }
-
-
-console.log('listening on port', port);
-app.listen(port);
-
-
-
-
 
 // var calculate = function(equation){
 //   var firstNumber = parseInt(equation.firstNumber);
